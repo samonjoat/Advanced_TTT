@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <button id="createSessionBtn">Create Session</button>
+        <div id="joinSessionArea">
+            <input type="text" id="sessionIdInput" placeholder="Enter Session ID">
+            <button id="joinSessionBtn">Join Session</button>
+        </div>
+        <div id="message">Player X's turn</div>
+        <div id="gameboard">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <div id="scoreboard">
+            <h3>Scoreboard</h3>
+            <div class="score-item">
+                <span class="player-label">Player X:</span>
+                <span id="playerXScore" class="score-value">0</span>
+            </div>
+            <div class="score-item">
+                <span class="player-label">Player O:</span>
+                <span id="playerOScore" class="score-value">0</span>
+            </div>
+            <div class="score-item">
+                <span class="player-label">Draws:</span>
+                <span id="drawsScore" class="score-value">0</span>
+            </div>
+        </div>
+        <button id="resetBtn">Reset Game</button>
+        <button id="quitBtn">Quit Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server/server_fixed.js",
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server-filesystem": "^2025.1.14",
+    "vite": "^5.0.0"
+  }
+}
